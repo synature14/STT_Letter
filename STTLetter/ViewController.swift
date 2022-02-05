@@ -9,7 +9,7 @@ import UIKit
 import Speech
 
 class ViewController: UIViewController {
-    private let speechRecognizer = SFSpeechRecognizer(locale: .current)
+    private let speechRecognizer = SFSpeechRecognizer(locale: Locale.init(identifier: "ko-KR"))
     private var recognitionRequest: SFSpeechAudioBufferRecognitionRequest?  // 음성 인식 요청
     private var recognitionTask: SFSpeechRecognitionTask?       // 인식 요청 결과
     
