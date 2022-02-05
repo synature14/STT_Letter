@@ -50,21 +50,30 @@
                                     <segue destination="acF-J9-u7p" kind="embed" id="6Vi-8O-pz6"/>
                                 </connections>
                             </containerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zhb-JU-JvN">
+                                <rect key="frame" x="207" y="822" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="nI2-dc-9TK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="1Me-dr-cMf"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="SCM-VL-JaJ" secondAttribute="bottom" constant="50" id="Bba-cq-8ko"/>
+                            <constraint firstItem="Zhb-JU-JvN" firstAttribute="top" secondItem="SCM-VL-JaJ" secondAttribute="bottom" constant="10" id="MDd-c9-at9"/>
                             <constraint firstItem="nI2-dc-9TK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="cFJ-zb-T4I"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="nI2-dc-9TK" secondAttribute="trailing" id="dgq-rH-ueS"/>
                             <constraint firstItem="SCM-VL-JaJ" firstAttribute="top" secondItem="nI2-dc-9TK" secondAttribute="bottom" id="jlN-be-6LB"/>
                             <constraint firstItem="SCM-VL-JaJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="o2O-hk-Ysg"/>
+                            <constraint firstItem="Zhb-JU-JvN" firstAttribute="centerX" secondItem="SCM-VL-JaJ" secondAttribute="centerX" id="zGg-8y-fSY"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="HHP-IR-N34"/>
                     <connections>
                         <outlet property="audioButton" destination="SCM-VL-JaJ" id="xph-nz-hlr"/>
+                        <outlet property="audioStatusLabel" destination="Zhb-JU-JvN" id="goe-T1-bgY"/>
                         <outlet property="containerView" destination="nI2-dc-9TK" id="uxc-te-yYF"/>
                     </connections>
                 </viewController>
@@ -80,12 +89,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="674"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MiE-yB-UtU">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="아무거나 말해보세요!" translatesAutoresizingMaskIntoConstraints="NO" id="MiE-yB-UtU">
                                 <rect key="frame" x="5" y="10" width="404" height="654"/>
                                 <color key="backgroundColor" systemColor="systemYellowColor"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <color key="textColor" systemColor="labelColor"/>
-                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-SemiBold" family="Apple SD Gothic Neo" pointSize="14"/>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>

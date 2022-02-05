@@ -19,7 +19,10 @@ class LetterViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        letterTextView.text = letter
+    }
+    
+    func removeAllLetter() {
+        letterTextView.text = ""
     }
     
 
