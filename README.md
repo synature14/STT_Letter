@@ -8,3 +8,7 @@ Let's make a speech-to-text letter!
   ```
 - 오디오 파일을 이용할 경우 : SFSpeechURLRecognitionRequest
 - 라이브 음성을 사용할 경우 : SFSpeechAudioBufferRecognitionRequest
+  * shouldReportPartialResults 프로퍼티를 true 셋팅하여 음성 인식 시스템이 결과가 인식되는 즉시 그 결과를 리턴
+  ``` swift
+    recognitionRequest.shouldReportPartialResults = true
+  ```
