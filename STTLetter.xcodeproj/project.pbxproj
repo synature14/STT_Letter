@@ -18,6 +18,7 @@
 		9899089027AC021700023A51 /* STTLetterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9899088F27AC021700023A51 /* STTLetterTests.swift */; };
 		9899089A27AC021700023A51 /* STTLetterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9899089927AC021700023A51 /* STTLetterUITests.swift */; };
 		9899089C27AC021700023A51 /* STTLetterUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9899089B27AC021700023A51 /* STTLetterUITestsLaunchTests.swift */; };
+		989908A927AC267800023A51 /* LetterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989908A827AC267800023A51 /* LetterViewController.swift */; };
 		DB24CA4815998F20074B114B /* Pods_STTLetterTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21AF03FF81E42395CE5ABF20 /* Pods_STTLetterTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -58,6 +59,7 @@
 		9899089527AC021700023A51 /* STTLetterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = STTLetterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9899089927AC021700023A51 /* STTLetterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STTLetterUITests.swift; sourceTree = "<group>"; };
 		9899089B27AC021700023A51 /* STTLetterUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STTLetterUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		989908A827AC267800023A51 /* LetterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetterViewController.swift; sourceTree = "<group>"; };
 		A3830B59ECCF69662F6C73A5 /* Pods-STTLetterTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-STTLetterTests.debug.xcconfig"; path = "Target Support Files/Pods-STTLetterTests/Pods-STTLetterTests.debug.xcconfig"; sourceTree = "<group>"; };
 		BA9A9703BCB27C5BF62CBD98 /* Pods-STTLetterUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-STTLetterUITests.debug.xcconfig"; path = "Target Support Files/Pods-STTLetterUITests/Pods-STTLetterUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		BBD29110DCDE447B76A2453D /* Pods-STTLetter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-STTLetter.debug.xcconfig"; path = "Target Support Files/Pods-STTLetter/Pods-STTLetter.debug.xcconfig"; sourceTree = "<group>"; };
@@ -101,7 +103,6 @@
 				BA9A9703BCB27C5BF62CBD98 /* Pods-STTLetterUITests.debug.xcconfig */,
 				60B8A6AF45C785641DAF6F8B /* Pods-STTLetterUITests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -137,6 +138,7 @@
 				9899088127AC021700023A51 /* Assets.xcassets */,
 				9899088327AC021700023A51 /* LaunchScreen.storyboard */,
 				9899088627AC021700023A51 /* Info.plist */,
+				989908A827AC267800023A51 /* LetterViewController.swift */,
 			);
 			path = STTLetter;
 			sourceTree = "<group>";
@@ -389,6 +391,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				989908A927AC267800023A51 /* LetterViewController.swift in Sources */,
 				9899087D27AC021600023A51 /* ViewController.swift in Sources */,
 				9899087927AC021600023A51 /* AppDelegate.swift in Sources */,
 				9899087B27AC021600023A51 /* SceneDelegate.swift in Sources */,
