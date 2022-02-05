@@ -10,7 +10,11 @@ import UIKit
 class LetterViewController: UIViewController {
     @IBOutlet weak var letterTextView: UITextView!
 
-    var letter: String = ""
+    var letter: String = "" {
+        didSet {
+            letterTextView.text = letter
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -46,7 +46,7 @@ class ViewController: UIViewController {
             // 음성 인식 역시 중단
             recognitionRequest?.endAudio()
             
-            audioButton.isEnabled = false
+            audioButton.isEnabled = true
             
         } else {
             startRecording()
@@ -97,7 +97,7 @@ class ViewController: UIViewController {
             
             //결과가 nil이 아닌 경우 textView.text 속성을 결과의 최상의 텍스트로 설정합니다.
             let text = result.bestTranscription.formattedString
-            child?.letter = text
+            self.child?.letter = text
             
             // isFinal == true: 최종 결과, false : 부분 발화
             if result.isFinal || error != nil {
